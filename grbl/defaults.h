@@ -46,8 +46,8 @@
     #define DEFAULT_Z_ACCELERATION            (30.0*60*60) // 30*60*60 mm/min^2 = 30 mm/sec^2
     #define DEFAULT_A_ACCELERATION            (100.0*60*60) // 100*60*60 mm/min^2 = 100 mm/sec^2
     #define DEFAULT_B_ACCELERATION            (100.0*60*60) // 100*60*60 mm/min^2 = 100 mm/sec^2
-    #define DEFAULT_X_MAX_TRAVEL              400.0   // mm NOTE: Must be a positive value.
-    #define DEFAULT_Y_MAX_TRAVEL              300.0   // mm NOTE: Must be a positive value.
+    #define DEFAULT_X_MAX_TRAVEL              160.0   // mm NOTE: Must be a positive value. // changed default for Laser4DIY
+    #define DEFAULT_Y_MAX_TRAVEL              160.0   // mm NOTE: Must be a positive value. // changed default for Laser4DIY
     #define DEFAULT_Z_MAX_TRAVEL              500.0   // mm NOTE: Must be a positive value.
     #define DEFAULT_A_MAX_TRAVEL              360.0   // °
     #define DEFAULT_B_MAX_TRAVEL              360.0   // °
@@ -60,9 +60,9 @@
 
     #define DEFAULT_SYSTEM_INVERT_MASK        0
     #define DEFAULT_STEPPING_INVERT_MASK      0
-    #define DEFAULT_DIRECTION_INVERT_MASK     0
+    #define DEFAULT_DIRECTION_INVERT_MASK     3       // changed default for Laser4DIY
     #define DEFAULT_STEPPER_IDLE_LOCK_TIME    50      // msec (0-254, 255 keeps steppers enabled)
-    #define DEFAULT_STATUS_REPORT_MASK        1       // MPos enabled
+    #define DEFAULT_STATUS_REPORT_MASK        0       // MPos off  // changed default for Laser4DIY
     #define DEFAULT_JUNCTION_DEVIATION        0.01    // mm
     #define DEFAULT_ARC_TOLERANCE             0.001   // mm
     #define DEFAULT_REPORT_INCHES             0       // false
@@ -71,10 +71,10 @@
     #define DEFAULT_SOFT_LIMIT_ENABLE         0       // false
     #define DEFAULT_HARD_LIMIT_ENABLE         1       // false
     #define DEFAULT_INVERT_PROBE_PIN          0       // false
-    #define DEFAULT_LASER_MODE                0       // false
+    #define DEFAULT_LASER_MODE                1       // true // changed default for Laser4DIY
     #define DEFAULT_LATHE_MODE                0       // false
-    #define DEFAULT_HOMING_ENABLE             1       // false
-    #define DEFAULT_HOMING_DIR_MASK           0       // move positive dir
+    #define DEFAULT_HOMING_ENABLE             1       // true
+    #define DEFAULT_HOMING_DIR_MASK           1       // move neg dir // changed default for Laser4DIY
     #define DEFAULT_HOMING_FEED_RATE          50.0    // mm/min
     #define DEFAULT_HOMING_SEEK_RATE          500.0   // mm/min
     #define DEFAULT_HOMING_DEBOUNCE_DELAY     250     // msec (0-65k)
