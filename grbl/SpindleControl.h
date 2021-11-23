@@ -23,7 +23,7 @@
 #define SPINDLECONTROL_H
 
 #include <stdint.h>
-
+#include "Config.h"
 
 #define SPINDLE_NO_SYNC             false
 #define SPINDLE_FORCE_SYNC          true
