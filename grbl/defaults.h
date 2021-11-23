@@ -36,8 +36,8 @@
     #define DEFAULT_Z_STEPS_PER_MM            400.0
     #define DEFAULT_A_STEPS_PER_DEG           10.0
     #define DEFAULT_B_STEPS_PER_DEG           10.0
-    #define DEFAULT_X_MAX_RATE                1000.0  // mm/min
-    #define DEFAULT_Y_MAX_RATE                1000.0  // mm/min
+    #define DEFAULT_X_MAX_RATE                (10.0*60)  // mm/min // changed for Laser4DIY
+    #define DEFAULT_Y_MAX_RATE                (10.0*60)  // mm/min // changed for Laser4DIY
     #define DEFAULT_Z_MAX_RATE                1000.0  // mm/min
     #define DEFAULT_A_MAX_RATE                10000.0  // °/min
     #define DEFAULT_B_MAX_RATE                10000.0  // °/min
@@ -51,7 +51,7 @@
     #define DEFAULT_Z_MAX_TRAVEL              500.0   // mm NOTE: Must be a positive value.
     #define DEFAULT_A_MAX_TRAVEL              360.0   // °
     #define DEFAULT_B_MAX_TRAVEL              360.0   // °
-    #define DEFAULT_SPINDLE_RPM_MAX           3000.0  // rpm
+    #define DEFAULT_SPINDLE_RPM_MAX           1000.0  // rpm // changed for Laser4DIY
     #define DEFAULT_SPINDLE_RPM_MIN           0.0     // rpm
 
     #define DEFAULT_X_BACKLASH                0.01     // mm
